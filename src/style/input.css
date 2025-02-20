@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-primary: 'Circular', sans-serif;
+
+  --color-primary: #DF6951;
+  --color-secondary: #7D7D7D;
+  --color-dark-grey: #5E6282;
+  --color-heading: #181E4B;
+  --color-small-heading: #1E1D4C;
+}
+
+@layer components {
+  .card {
+    padding: 4rem 3rem;
+    border-radius: 4rem;
+    position: relative;
+    transition: box-shadow .3s ease-in-out;
+    background-color: white;
+  }
+
+  .card::after {
+    content: '';
+    position: absolute;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 4rem 4rem 4rem 5rem;
+    background-color: var(--color-primary);
+    z-index: -1;
+    bottom: 1rem;
+    left: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+}
