@@ -7,7 +7,6 @@
   <title>Travel</title>
   <link rel="stylesheet" href="./style/output.css" />
   <link rel="stylesheet" href="./style/input.css">
-  <link rel="stylesheet" href="./style/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -26,14 +25,14 @@
       <nav class="container-[max-w-[132rem]] relative py-12 mx-auto flex justify-between items-center md:py-0">
         <img src="../assets/images/logo.png" alt="" class="h-20">
         <div class="hidden md:flex items-center gap-14 h-48 text-white text-2xl md:gap-8">
+          <a class="relative before:content-[''] before:absolute before:h-[2px] before:bg-primary before:rounded-[2px] before:left-[0] before:right-[0] before:top-[100%] before:transition-width before:duration-300 before:w-full"
+            href="./index.html">Home</a>
           <a class="relative after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-[0%] after:rounded-[2px] after:left-[0] after:right-[0] after:top-[100%] after:transition-width after:duration-300 hover:after:w-full"
-            href="">Home</a>
-          <a class="relative after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-[0%] after:rounded-[2px] after:left-[0] after:right-[0] after:top-[100%] after:transition-width after:duration-300 hover:after:w-full"
-            href="">About</a>
+            href="./about.html">About</a>
           <div class="group relative">
-            <button
-              class="relative after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-[0%] after:rounded-[2px] after:left-[0] after:right-[0] after:top-[100%] after:transition-width after:duration-300 hover:after:w-full navigation-btn"
-              href="">Services</button>
+            <a
+              class="relative after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-[0%] after:rounded-[2px] after:left-[0] after:right-[0] after:top-[100%] after:transition-width after:duration-300 hover:after:w-full navigation-btn"
+              href="./services.html">Services</a>
             <div
               class="absolute hidden group-hover:block text-white bg-white/30 backdrop-blur-none shadow-lg mt-2 rounded-md p-10">
               <a class="block px-6 py-2 relative after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-[0%] after:rounded-[2px] after:left-[0] after:right-[0] after:top-[100%] after:transition-width after:duration-300 hover:after:w-full"
@@ -47,7 +46,7 @@
             </div>
           </div>
           <a class="relative after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-[0%] after:rounded-[2px] after:left-[0] after:right-[0] after:top-[100%] after:transition-width after:duration-300 hover:after:w-full"
-            href="">Upcomming Packages</a>
+            href="./upcoming.html">Upcomming Packages</a>
         </div>
         <button
           class="hidden md:flex font-medium text-2xl bg-primary rounded-2xl w-fit py-[1.2rem] px-[1.8rem] text-white hover:cursor-pointer">Get
@@ -58,21 +57,21 @@
         </button>
       </nav>
 
-      <div class="container-[max-w-[132rem]] pt-56 pb-48">
+      <div class="max-w-[132rem] pt-56 pb-72">
         <div id="content-container">
           <img src="../assets/images/vector1.png" alt="" class="h-7 mt-4">
           <h1 class="text-[4.8rem] font-bold text-white mb-16 md:mr-[30%] lg:mr-[55%]">No matter where you’re going to,
             we’ll take you there</h1>
           <div
             class="grid grid-cols-2 gap-8 text-white text-center bg-white/30 text-2xl backdrop-blur-none py-6 px-8 w-fit mb-8 rounded-[5px] md:grid-cols-4 md:gap-0 md:text-3xl">
-            <div class="relative h-[3.3rem] flex items-center px-16 md:pl-0">
+            <div class="relative flex items-center px-16 md:pl-0">
               <p>Where to?</p>
             </div>
-            <div class="relative h-[3.3rem] flex items-center px-16 pl-16 md:px-0">
+            <div class="relative flex items-center px-16 pl-16 md:px-0">
               <p>Travel Tip</p>
               <img class="h-3 ml-1" src="../assets/images/icon-arrow-down.png" alt="">
             </div>
-            <div class="relative h-[3.3rem] flex items-center px-16">
+            <div class="relative flex items-center px-16">
               <p>Duration</p>
               <img class="h-3 ml-1" src="../assets/images/icon-arrow-down.png" alt="">
             </div>
@@ -98,7 +97,7 @@
   </section>
 
   <!-- BANNER SECTION -->
-  <section class="w-full max-w-[192rem] bg-zinc-100 mx-auto px-11">
+  <section class="w-full max-w-[215rem] bg-zinc-100 mx-auto px-11">
     <div class="flex flex-wrap justify-between py-16 gap-y-16 gap-x-8">
       <img class="h-16" src="../assets/images/fly emirates.png" alt="">
       <img class="h-16" src="../assets/images/trivago.png" alt="">
@@ -110,7 +109,7 @@
 
   <!-- CATEGORY SECTION -->
   <section class="w-full px-11">
-    <div class="container-[max-[132rem]] mx-auto text-center mb-40">
+    <div class="max-w-[132rem] mx-auto text-center mb-40">
       <p class="text-primary text-3xl font-semibold mt-48 mb-8">CATEGORY</p>
       <h1 class="font-[Volkhov] text-heading font-bold text-7xl/tight">We Offer Best Services</h1>
       <div class="flex flex-wrap justify-around mt-8 gap-y-16">
@@ -119,33 +118,362 @@
           <img class="h-32 mx-auto" src="../assets/images/g1.png" alt="">
           <h4 class="text-heading text-3xl font-semibold mt-8">Guided Tours</h4>
           <p class="text-dark-grey font-medium text-2xl mt-4">sunt qui repellat saepe <br>quo velit aperiam id
-            <br>aliquam placeat.</p>
+            <br>aliquam placeat.
+          </p>
         </div>
         <div
           class="relative py-16 px-12 rounded-4xl bg-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:after:w-[11rem] after:h-[11rem] after:content-[''] after:absolute after:rounded-[4rem_4rem_4rem_5rem] after:bg-primary after:z-[-1] after:-bottom-[2rem] after:-left-[2rem] after:transition-transform after:duration-500 after:ease-in-out">
           <img class="h-32 mx-auto" src="../assets/images/g2.png" alt="">
           <h4 class="text-heading text-3xl font-semibold mt-8">Best Flights Options</h4>
           <p class="text-dark-grey font-medium text-2xl mt-4">sunt qui repellat saepe <br>quo velit aperiam id
-            <br>aliquam placeat.</p>
+            <br>aliquam placeat.
+          </p>
         </div>
         <div
           class="relative py-16 px-12 rounded-4xl bg-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:after:w-[11rem] after:h-[11rem] after:content-[''] after:absolute after:rounded-[4rem_4rem_4rem_5rem] after:bg-primary after:z-[-1] after:-bottom-[2rem] after:-left-[2rem] after:transition-transform after:duration-500 after:ease-in-out">
           <img class="h-32 mx-auto" src="../assets/images/g3.png" alt="">
           <h4 class="text-heading text-3xl font-semibold mt-8">Religious Tours</h4>
           <p class="text-dark-grey font-medium text-2xl mt-4">sunt qui repellat saepe <br>quo velit aperiam id
-            <br>aliquam placeat.</p>
+            <br>aliquam placeat.
+          </p>
         </div>
         <div
           class="relative py-16 px-12 rounded-4xl bg-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:after:w-[11rem] after:h-[11rem] after:content-[''] after:absolute after:rounded-[4rem_4rem_4rem_5rem] after:bg-primary after:z-[-1] after:-bottom-[2rem] after:-left-[2rem] after:transition-transform after:duration-500 after:ease-in-out">
           <img class="h-32 mx-auto" src="../assets/images/g4.png" alt="">
           <h4 class="text-heading text-3xl font-semibold mt-8">Medical insurance</h4>
           <p class="text-dark-grey font-medium text-2xl mt-4">sunt qui repellat saepe <br>quo velit aperiam id
-            <br>aliquam placeat.</p>
+            <br>aliquam placeat.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- HONEYMOON SECTION -->
+  <section class="w-full px-11 md:px-0">
+    <div class="container mx-auto gap-y-24 flex flex-col-reverse items-center md:flex-row lg:gap-x-40">
+      <img class="w-full mx-auto md:w-[50%]" src="../assets/images/image.png" alt="">
+      <div class="w-full flex flex-col md:w-[80%] md:ml-8 md:mx-[5%] lg:w-[42%]">
+        <p class="text-primary font-semibold text-2xl">Honeymoon Specials</p>
+        <h1 class="font-[Volkhov] font-bold text-7xl/tight text-heading">Our Romantic Tropical <br>Destinations</h1>
+        <p class="text-black text-2xl mt-6 mb-10">Et labore harum non nobis ipsum eum molestias mollitia et corporis
+          praesentium
+          a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in
+          maxime quasi aut ducimus illum aut optio quibusdam!</p>
+        <button
+          class="text-2xl font-medium py-[1.2rem] px-[1.8rem] bg-primary text-white hover:cursor-pointer rounded-2xl w-fit">View
+          Packages</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAST & EASY SECTION -->
+  <section class="w-full px-11">
+    <div class="container mx-auto pt-40 pb-28 md:flex">
+      <div class="w-full md:w-[80%] lg:mx-[5%]">
+        <p class="text-primary font-semibold text-2xl mb-8">Fast & Easy</p>
+        <div class="font-[Volkhov] text-7xl/tight text-heading font-bold">Get Your Favourite <br>Resort Bookings</div>
+        <div class="flex flex-col gap-14 mt-12 w-[80%] md:w-full">
+          <div class="flex gap-10">
+            <img class="w-[5.8rem]" src="../assets/images/icon1.png" alt="">
+            <div class="content-text">
+              <h4 class="text-dark-grey font-bold text-2xl">Choose Destination</h4>
+              <p class="text-dark-grey text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
+                tempus. </p>
+            </div>
+          </div>
+          <div class="flex gap-10">
+            <img class="w-[5.8rem]" src="../assets/images/icon2.png" alt="">
+            <div class="content-text">
+              <h4 class="text-dark-grey font-bold text-2xl">Check Availability</h4>
+              <p class="text-dark-grey text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
+                tempus. </p>
+            </div>
+          </div>
+          <div class="flex gap-10">
+            <img class="w-[5.8rem]" src="../assets/images/icon3.png" alt="">
+            <div class="content-text">
+              <h4 class="text-dark-grey font-bold text-2xl">Let’s Go</h4>
+              <p class="text-dark-grey text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
+                tempus. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mx-auto md:w-[50%]">
+        <img class="w-full" src="../assets/images/tripimg.png" alt="" class="tripimg">
+      </div>
+    </div>
+  </section>
+
+  <!-- AMAZING SECTION -->
+  <section class="w-full">
+    <div class="max-w-[215rem] mx-auto px-11 bg-[url(/assets/images/liberty.png)] bg-cover">
+      <div class="container-[max-w-[132rem]] mx-auto py-40">
+        <div class="relative w-fit md:mx-[10%]">
+          <h1 class="text-white font-[Volkhov] font-bold text-7xl/tight">Let’s Make Your <br>Next Holiday Amazing</h1>
+          <img class="absolute top-full h-14 right-0 md:-right-24" src="../assets/images/line asset.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROMOTION SECTION -->
+  <section class="w-full px-11 xl:px-[10%]">
+    <div
+      class="max-w-[132rem] relative mx-auto my-48 pb-20 after:absolute after:content-[''] after:bg-[url(/assets/images/eiffel-tower.png)] after:h-full xl:after:w-[50rem] after:bg-contain after:bg-no-repeat after:z-[-1] after:bottom-0 after:right-0 after:bg-right-bottom">
+      <div class="w-full md:w-[80%] lg:w-[47%]">
+        <p class="text-primary font-semibold text-2xl mb-2">Promotion</p>
+        <h1 class="font-[Volkhov] font-bold text-7xl/tight text-heading">We Provide You Best Europe Sightseeing Tours
+        </h1>
+        <p class="text-black text-2xl mt-10 mb-14 mr-[14%]">Et labore harum non nobis ipsum eum molestias mollitia et
+          corporis praesentium
+          a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in
+          maxime quasi aut ducimus illum aut optio quibusdam!</p>
+        <button
+          class="text-2xl font-medium py-[1.2rem] px-[1.8rem] bg-primary text-white hover:cursor-pointer rounded-2xl w-fit">View
+          Packages</button>
+      </div>
+      <div class="mt-28 flex flex-wrap justify-center gap-24">
+        <img class="w-full rounded-2xl aspect-square md:w-[21rem] lg:w-[25rem]" src="../assets/images/Destination 1.png"
+          alt="">
+        <img class="w-full rounded-2xl aspect-square md:w-[21rem] lg:w-[25rem]" src="../assets/images/Destination 2.png"
+          alt="">
+        <img class="w-full rounded-2xl aspect-square md:w-[21rem] lg:w-[25rem]" src="../assets/images/Destination 3.png"
+          alt="">
+        <img class="w-full rounded-2xl aspect-square md:w-[21rem] lg:w-[25rem]" src="../assets/images/Destination 4.png"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOTION PACKAGES SECTION -->
+  <section class="w-full">
+    <div class="w-full max-w-[192rem] mx-auto md:flex">
+      <div
+        class="flex flex-col justify-center items-center bg-[url(/assets/images/nature.png)] bg-[auto_110%] hover:bg-[auto_100%] bg-center bg-no-repeat py-32 md:w-full transition-[background-size] duration-300 ease">
+        <div class="text-center relative mb-10">
+          <p class="text-white font-semibold text-2xl mt-44 mb-8">Promotion</p>
+          <h1 class="font-[Volkhov] font-bold text-7xl text-white">Explore Nature</h1>
+          <img class="absolute h-8 top-[88%] right-8" src="../assets/images/line asset 2.png" alt="">
+        </div>
+        <button
+          class="bg-transparent text-white border-2 border-solid border-white text-2xl font-medium py-[1.2rem] px-[1.8rem] rounded-2xl w-fit">View
+          Packages</button>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center bg-[url(/assets/images/city.png)] bg-[auto_110%] hover:bg-[auto_100%] bg-center bg-no-repeat py-32 md:w-full transition-[background-size] duration-300 ease">
+        <div class="text-center relative mb-10">
+          <p class="text-white font-semibold text-2xl mt-44 mb-8">Promotion</p>
+          <h1 class="font-[Volkhov] font-bold text-7xl text-white">Explore City</h1>
+          <img class="absolute h-8 top-[88%] -right-8" src="../assets/images/line asset 2.png" alt="">
+        </div>
+        <button
+          class="bg-transparent text-white border-2 border-solid border-white text-2xl font-medium py-[1.2rem] px-[1.8rem] rounded-2xl w-fit">View Packages</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES SECTION -->
+  <section class="w-full px-11">
+    <div class="container-[max-w-[132.rem]] mx-auto text-center py-48">
+      <p class="text-primary font-semibold text-2xl mt-44">TRENDY</p>
+      <h1 class="font-[Volkhov] font-bold text-7xl/tight text-heading">Our Trending Tour <br>Packages</h1>
+      <div class="grid grid-cols-1 gap-x-20 gap-y-32 mx-[5%] mt-24 justify-center md:grid-cols-2 lg:grid-cols-3">
+        <div class="text-start">
+          <img src="../assets/images/switzer-land.png" alt="">
+          <div class="days-people flex items-center gap-[10%]">
+            <div class="flex items-center gap-3.5">
+              <img class="icon w-11" src="../assets/images/calender-icon.png" alt="">
+              <p class="text-3xl text-dark-grey whitespace-nowrap">8 days</p>
+            </div>
+            <div class="people flex items-center gap-3.5">
+              <img class="icon w-11" src="../assets/images/profile-icon.png" alt="">
+              <p class="text-3xl text-dark-grey whitespace-nowrap">25 People going</p>
+            </div>
+          </div>
+          <div class="place-stars flex items-center justify-between mt-4">
+            <h2 class="text-5xl font-bold">Switzerland</h2>
+            <div class="stars-container flex items-center justify-center gap-1">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+            </div>
+          </div>
+          <div class="location flex items-center gap-3.5">
+            <img class="icon w-11" src="../assets/images/location-icon.png" alt="">
+            <p class="text-3xl text-dark-grey whitespace-nowrap">Europe</p>
+          </div>
+          <div class="price flex items-end my-4 gap-8">
+            <h1 class="text-4xl text-primary font-medium">1,000 $</h1>
+            <span class="text-3xl text-dark-grey mt-16 font-medium line-through decoration-2">1,200 $</span>
+          </div>
+          <p class="paragraph text-2xl">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia
+            amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis
+            praesentium a laudantium internos.</p>
+          <div
+            class="btn explore-now-btn mt-16 text-2xl font-medium py-[1.2rem] px-[1.8rem] text-white bg-primary hover:cursor-pointer rounded-2xl w-fit">
+            Explore Now</div>
+        </div>
+        <div class="text-start">
+          <img src="../assets/images/amazon.png" alt="">
+          <div class="days-people flex items-center gap-[10%]">
+            <div class="flex items-center gap-3.5">
+              <img class="icon w-11" src="../assets/images/calender-icon.png" alt="">
+              <p class="text-3xl text-dark-grey whitespace-nowrap">8 days</p>
+            </div>
+            <div class="people flex items-center gap-3.5">
+              <img class="icon w-11" src="../assets/images/profile-icon.png" alt="">
+              <p class="text-3xl text-dark-grey whitespace-nowrap">30 People going</p>
+            </div>
+          </div>
+          <div class="place-stars flex items-center justify-between mt-4">
+            <h2 class="text-5xl font-bold">Amazon</h2>
+            <div class="stars-container flex items-center justify-center gap-1">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+            </div>
+          </div>
+          <div class="location flex items-center gap-3.5">
+            <img class="icon w-11" src="../assets/images/location-icon.png" alt="">
+            <p class="text-3xl text-dark-grey whitespace-nowrap">Brazil</p>
+          </div>
+          <div class="price flex items-end my-4 gap-8">
+            <h1 class="text-4xl text-primary font-medium">1,200 $</h1>
+            <span class="text-3xl text-dark-grey mt-16 font-medium line-through decoration-2">1,400 $</span>
+          </div>
+          <p class="paragraph text-2xl">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia
+            amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis
+            praesentium a laudantium internos.</p>
+          <div
+            class="btn explore-now-btn mt-16 text-2xl font-medium py-[1.2rem] px-[1.8rem] text-white bg-primary hover:cursor-pointer rounded-2xl w-fit">
+            Explore Now</div>
+        </div>
+        <div class="text-start">
+          <img src="../assets/images/giza.png" alt="">
+          <div class="days-people flex items-center gap-[10%]">
+            <div class="flex items-center gap-3.5">
+              <img class="icon w-11" src="../assets/images/calender-icon.png" alt="">
+              <p class="text-3xl text-dark-grey whitespace-nowrap">8 days</p>
+            </div>
+            <div class="people flex items-center gap-3.5">
+              <img class="icon w-11" src="../assets/images/profile-icon.png" alt="">
+              <p class="text-3xl text-dark-grey whitespace-nowrap">155 People going</p>
+            </div>
+          </div>
+          <div class="place-stars flex items-center justify-between mt-4">
+            <h2 class="text-5xl font-bold">Giza</h2>
+            <div class="stars-container flex items-center justify-center gap-1">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+              <img class="w-8" src="../assets/images/star-icon.png" alt="star-icon">
+            </div>
+          </div>
+          <div class="location flex items-center gap-3.5">
+            <img class="icon w-11" src="../assets/images/location-icon.png" alt="">
+            <p class="text-3xl text-dark-grey whitespace-nowrap">Egypt</p>
+          </div>
+          <div class="price flex items-end my-4 gap-8">
+            <h1 class="text-4xl text-primary font-medium">1,200 $</h1>
+            <span class="text-3xl text-dark-grey mt-16 font-medium line-through decoration-2">2,000 $</span>
+          </div>
+          <p class="paragraph text-2xl">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia
+            amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis
+            praesentium a laudantium internos.</p>
+          <div
+            class="btn explore-now-btn mt-16 text-2xl font-medium py-[1.2rem] px-[1.8rem] text-white bg-primary hover:cursor-pointer rounded-2xl w-fit">
+            Explore Now</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVEIW SECTION -->
+  <section class="w-full">
+    <div
+      class="relative max-w-[170rem] mx-auto flex flex-col items-center px-[2.8rem] bg-[url(/assets/images/review-bg.png)] bg-cover bg-center before:bg-[url(/assets/images/travel-concept.png)] before:z-50 before:absolute before:content-[''] before:bg-contain before:bg-left-bottom before:w-[25rem] before:aspect-square before:bottom-0 before:left-0">
+      <p class="text-primary font-semibold text-2xl mt-44">Promotion</p>
+      <h1 class="font-[Volkhov] font-bold text-7xl/tight text-heading">See What Our Clients Say About Us</h1>
+      <div class="text-center relative flex mt-16 mb-48">
+        <div class="overflow-hidden flex max-w-[61rem]">
+          <div class="flex flex-col justify-center items-center">
+            <img src="../assets/images/review-profile-picture.png" alt=""
+              class="w-48 -mb-24 rounded-[50%] shadow-[4px 16px 27px rgba(0, 0, 0, 0.15)] z-50">
+            <div
+              class="px-20 bg-white text-center pb-[4.4rem] pt-36 rounded-4xl md:w-[30rem] lg:w-[40rem] xl:w-[50rem] mx-auto">
+              <p class="relative text-2xl">Vel officiis dolor ea illo aut eligendi ullam non laudantium
+                magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt
+                provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et
+                ipsum omnis.<img class="w-8 inline-block" src="../assets/images/double-quotes-right.png" alt=""></p>
+              <h3 class="font-bold text-3xl mt-5">Christine Beckam - Designer</h3>
+            </div>
+          </div>
+        </div>
+        <button class="-left-14 w-28 aspect-square rounded-full absolute top-[50%]">
+          <img src="../assets/images/navigation-icon.png" alt="">
+        </button>
+        <button class="w-28 -right-14 aspect-square rounded-full absolute top-[50%]">
+          <img class="shadow-[0 20px 35px rgba(115,115,115, 0.15)] rotate-180"
+            src="../assets/images/navigation-icon.png" alt="">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="w-full">
+    <div class="relative max-w-[192rem] mx-auto px-[2.8rem] md:px-0">
+      <img src="../assets/images/Footer img.png" alt="" class="absolute right-0 bottom-0 h-[90%] -z-[1]">
+
+      <div class="mx-auto py-40 lg:flex lg:justify-between md:px-8">
+        <div class="w-[50%] lg:w-[30%]">
+          <img class="h-24" src="../assets/images/dark-logo.png" alt="">
+          <p class="text-dark-grey text-2xl/relaxed mb-10">Travel helps companies <br>manage payments easily.</p>
+          <div class="flex gap-6">
+            <img class="h-8" src="../assets/images/icon-linkedin.png" alt="">
+            <img class="h-8" src="../assets/images/icon-messenger.png" alt="">
+            <img class="h-8" src="../assets/images/icon-twitter.png" alt="">
+            <img class="h-8" src="../assets/images/icon-twoo.png" alt="">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-16 md:grid-cols-4 mt-16 lg:mt-0">
+          <div class="flex flex-col gap-5 text-heading">
+            <h3 class="text-3xl font-semibold">Company</h3>
+            <a class="text-2xl">About Us</a>
+            <a class="text-2xl">Careers</a>
+            <a class="text-2xl">Blog</a>
+            <a class="text-2xl">Pricing</a>
+          </div>
+          <div class="flex flex-col gap-5 text-heading">
+            <h3 class="text-3xl font-semibold">Destinations</h3>
+            <a class="text-2xl">Maldives</a>
+            <a class="text-2xl">Los Angelas</a>
+            <a class="text-2xl">Las Vegas</a>
+            <a class="text-2xl">Torronto</a>
+          </div>
+          <div class="flex flex-col gap-5 text-heading md:col-span-2">
+            <h3 class="w-full text-3xl font-semibold">Join Our Newsletter</h3>
+            <form action="" class="newsletter-form">
+              <input type="email" placeholder="Your email address" class="h-[4.8rem] bg-gray-300 pl-[1.8rem] text-2xl font-medium w-[95%]">
+              <button class="-ml-[10.6rem] text-2xl font-medium py-[1.3rem] px-[1.8rem] bg-primary text-white hover:cursor-pointer rounded-2xl w-fit" type="submit">Subscribe</button>
+            </form>
+            <p class="text-small-heading opacity-[0.5] text-2xl">* Will send you weekly updates for your better tour packages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[132rem] mx-auto py-16 border-t-2 border-solid border-zinc-200 text-center">
+        <p class="text-2xl text-heading">Copyright @ Xpro 2022. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
